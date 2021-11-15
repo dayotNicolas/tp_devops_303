@@ -44,20 +44,19 @@ kube-system       Active   5h20m
 
 ## 4. Prometheus
 ```bash
-$ kubectl get pods
-NAME                                                     READY   STATUS             RESTARTS        AGE
-alertmanager-prometheus-kube-prometheus-alertmanager-0   2/2     Running            0               39m
-app-7cdc5ff459-p6tlg                                     1/1     Running            0               128m
-app-7cdc5ff459-pn22w                                     1/1     Running            0               3h3m
-app-7cdc5ff459-tpj4l                                     1/1     Running            0               128m
-hello-world-7dcdb86496-g725x                             1/1     Running            0               128m
-hello-world-7dcdb86496-lqjrv                             1/1     Running            0               128m
-hello-world-7dcdb86496-xbh9k                             1/1     Running            0               128m
-prometheus-grafana-c8787f89b-5tq8c                       1/2     CrashLoopBackOff   13 (82s ago)    41m
-prometheus-kube-prometheus-operator-86d499db8f-qlsqp     0/1     CrashLoopBackOff   9 (86s ago)     41m
-prometheus-kube-state-metrics-58c5cd6ddb-67q8s           1/1     Running            12 (84s ago)    41m
-prometheus-prometheus-kube-prometheus-prometheus-0       1/2     CrashLoopBackOff   8 (4m42s ago)   39m
-prometheus-prometheus-node-exporter-hbgrb                1/1     Running            16              41m
-redis-6d44c9d869-ggtk8                                   1/1     Running            0               128m
+    $ kubectl get service
+NAME                                      TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
+alertmanager-operated                     ClusterIP   None             <none>        9093/TCP,9094/TCP,9094/UDP   49m
+app                                       ClusterIP   10.108.228.243   <none>        80/TCP                       5h29m
+hello-world                               ClusterIP   10.103.146.51    <none>        80/TCP                       5h27m
+kubernetes                                ClusterIP   10.96.0.1        <none>        443/TCP                      5h37m
+prometheus-grafana                        ClusterIP   10.110.210.220   <none>        80/TCP                       52m
+prometheus-kube-prometheus-alertmanager   ClusterIP   10.110.159.132   <none>        9093/TCP                     52m
+prometheus-kube-prometheus-operator       ClusterIP   10.96.239.158    <none>        443/TCP                      52m
+prometheus-kube-prometheus-prometheus     ClusterIP   10.110.207.163   <none>        9090/TCP                     52m
+prometheus-kube-state-metrics             ClusterIP   10.107.146.175   <none>        8080/TCP                     52m
+prometheus-operated                       ClusterIP   None             <none>        9090/TCP                     49m
+prometheus-prometheus-node-exporter       ClusterIP   10.103.40.183    <none>        9100/TCP                     52m
+redis                                     ClusterIP   10.99.164.159    <none>        6379/TCP                     4h29m
 ```
 :D
