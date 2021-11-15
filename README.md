@@ -40,7 +40,7 @@ kube-system       Active   5h20m
 
 ---
 
-<iframe src="https://giphy.com/embed/l4pTjOu0NsrLApt0Q" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ending-looney-tunes-the-end-l4pTjOu0NsrLApt0Q"></a></p>
+![](https://giphy.com/gifs/ending-looney-tunes-the-end-l4pTjOu0NsrLApt0Q)
 
 ## 4. Prometheus
 ```bash
