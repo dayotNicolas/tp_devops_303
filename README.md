@@ -1,6 +1,6 @@
 # TP Devops 101
 
-Composiiton du duo: *Nicolas Dayot* & *Samuel Adone*
+Composiiton du duo: *Nicolas Dayot* & *Samuel Adone* & *Marie Dugoua*
 _lien du git_: https://github.com/dayotNicolas/tp_devops_303.git
 ## 1. Découpage de namespace
 ```
